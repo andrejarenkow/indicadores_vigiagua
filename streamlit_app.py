@@ -147,7 +147,7 @@ if uploaded_file is not None:
         colunas_primeiro = ['Município', 'Mensal']
         colunas_numericas = sorted(
             [col for col in tabela_completa.columns if str(col).isdigit()],
-            key=lambda x: int(x)
+            key=lambda x: int(x))
         colunas_demais = [col for col in tabela_completa.columns if not str(col).isdigit() and col not in colunas_primeiro]
         tabela_completa = tabela_completa[colunas_primeiro + colunas_numericas + colunas_demais]
         
