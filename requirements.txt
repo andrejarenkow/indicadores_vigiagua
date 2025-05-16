@@ -1,0 +1,6 @@
+pandas
+streamlit
+numpy
+glob
+zipfile
+io
