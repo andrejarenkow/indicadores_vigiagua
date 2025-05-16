@@ -92,7 +92,7 @@ if uploaded_file is not None:
         
         # Calcular métricas
         valor_indicador = round(tabela_dinamica[tabela_dinamica['Indicador'] >= 0.9].shape[0] / 497 * 100, 2)
-        municipios_zerados = len(tabela_dinamica[tabela_dinamica['Amostras_coletadas'] == 0)
+        municipios_zerados = len(tabela_dinamica[tabela_dinamica['Amostras_coletadas'] == 0])
         
         # Exibir métricas
         col1, col2 = st.columns(2)
